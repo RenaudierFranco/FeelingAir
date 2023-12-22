@@ -1955,7 +1955,7 @@ textarea.form-control {
       -webkit-transition: none;
       transition: none; } }
   .btn:hover {
-    color: #212529;
+    color: var(--blue);
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
@@ -4924,7 +4924,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #343a40 !important; }
+  background-color:  #444041 !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -8434,7 +8434,7 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #f5ba4b !important; }
+  color: var(--blue) !important; }
 
 a.text-primary:hover, a.text-primary:focus {
   color: #e79b0d !important; }
@@ -8923,8 +8923,8 @@ label {
   background-color: white; }
   .form-control:focus + .input-group-append .input-group-text {
     background-color: white;
-    border-color: #f5ba4b;
-    color: #f5ba4b; }
+    border-color: var(--blue) ;
+    color: var(--blue); }
   .form-control:focus + .input-group-append .input-group-icon > path {
     -webkit-animation: icon .5s linear forwards;
             animation: icon .5s linear forwards; }
