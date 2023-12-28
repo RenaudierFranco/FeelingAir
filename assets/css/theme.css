@@ -1957,6 +1957,7 @@ textarea.form-control {
   .btn:hover {
     color: var(--blue);
     text-decoration: none; }
+  
   .btn:focus, .btn.focus {
     outline: 0;
     box-shadow: none; }
@@ -4928,7 +4929,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color:  #444041 !important; }
+  background-color:  #35698d !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
