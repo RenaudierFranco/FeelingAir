@@ -2180,9 +2180,9 @@ fieldset:disabled a.btn {
   color: #FFFFFF;
   border-color: #FFFFFF; }
   .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #FFFFFF;
-    border-color: #FFFFFF; }
+    color: #fff !important;
+    border-color: #35698d !important;
+    background-color: #35698d !important;}
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(245, 186, 75, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
