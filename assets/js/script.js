@@ -51,7 +51,7 @@ function cargarContenidos() {
       })
       .catch(error => console.error('Error al cargar los contenidos:', error));
   }
-
+// Carga el contenido 
   cargarContenidos()
   
 
@@ -69,9 +69,17 @@ document.getElementById('EN').addEventListener('click', function () {
     cargarContenidos()
   });
   
-  // Función para cambiar el idioma
+  // Cambiar el idioma
   function cambiarIdioma(nuevoIdioma) {
-    // Cambiar el idioma actual
     idiomaActual = nuevoIdioma;
   }
+
+// Asigna funcionalidad al ícono de Whatsapp flotante
+  $(document).ready(function() {
+    $(".whatsapp-icon a").on("click", function(e) {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+  });
+  
   
