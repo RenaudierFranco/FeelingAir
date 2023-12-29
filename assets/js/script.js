@@ -7,7 +7,7 @@ var idiomaActual = 'en';
 function cargarContenidos() {
 
     //JSON con las traducciones
-    fetch(`../../assets/JSON/${idiomaActual}.JSON`)
+    fetch(`/assets/JSON/${idiomaActual}.JSON`)
       .then(response => response.json())
       .then(data => {
         // Navbar
@@ -64,8 +64,6 @@ document.getElementById('EN').addEventListener('click', function () {
   
   document.getElementById('ES').addEventListener('click', function () {
     cambiarIdioma('es')
-    console.log('español')
-    console.log('idioma actual', idiomaActual)
     cargarContenidos()
   });
   
@@ -77,7 +75,6 @@ document.getElementById('EN').addEventListener('click', function () {
 // Asigna funcionalidad al ícono de Whatsapp flotante
   $(document).ready(function() {
     $(".whatsapp-icon a").on("click", function(e) {
-      e.preventDefault();
       $("html, body").animate({ scrollTop: 0 }, "slow");
     });
   });
