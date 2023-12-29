@@ -92,28 +92,38 @@
           <!-- Links -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a href="#hero" class="nav-link">
+              <a href="#hero" id="HOME" class="nav-link">
                 Home
               </a>             
             </li>
             <li class="nav-item ">
-              <a href="#about-1" class="nav-link">
+              <a href="#about-1" id="COMPANY" class="nav-link">
                 Empresa
               </a>
             </li>
             <li class="nav-item ">
-              <a href="#services" class="nav-link">
+              <a href="#services" id="FLEET" class="nav-link">
                 Flota
               </a>
             </li>
             <li class="nav-item ">
-              <a href="#promo" class="nav-link">
+              <a href="#promo" id="SERVICES" class="nav-link">
                 Servicios
               </a>
             </li>
             <li class="nav-item ">
-              <a href="#testimonials" class="nav-link">
+              <a href="#testimonials" id="CONTACT" class="nav-link">
                 Contacto
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" id="EN" class="nav-link">
+                en
+              </a>
+            </li>  
+            <li class="nav-item">
+              <a href="#" id="ES" class="nav-link">
+                es
               </a>
             </li> 
           </ul>
@@ -163,7 +173,7 @@
                     <div class="form-group col-md-3">
                       <!-- Origen -->
                       <div class="input-group">
-                        <input type="text" class="form-control order-1" name="form-origen" placeholder="Origen">
+                        <input type="text" id="ORIGIN" class="form-control order-1" name="form-origen" placeholder="Origen">
                         <div class="input-group-append order-0">
                           <div class="input-group-text">
                             <!-- Icon -->
@@ -179,7 +189,7 @@
                     <div class="form-group col-md-3">  
                       <!-- Destino -->
                       <div class="input-group">
-                        <input type="email" class="form-control order-1" name="form-destino" placeholder="Destino">
+                        <input type="text" id="DESTINATION" class="form-control order-1" name="form-destino" placeholder="Destino">
                         <div class="input-group-append order-0">
                           <div class="input-group-text">
                             <!-- Icon -->
@@ -194,7 +204,7 @@
                     <div class="form-group col-md-3">  
                       <!-- Salida -->
                       <div class="input-group">
-                        <input type="date" class="form-control order-1" name="form-date">
+                        <input type="date" id="DATE" class="form-control order-1" name="form-date">
                         <div class="input-group-append order-0">
                           <div class="input-group-text">
                             <!-- Icon -->
@@ -210,7 +220,7 @@
                     <div class="form-group col-md-2">  
                       <!-- Pax -->
                       <div class="input-group">
-                        <input type="number" class="form-control order-1" name="contact-pax" placeholder="Pax">
+                        <input type="number" id="PAX" class="form-control order-1" name="contact-pax" placeholder="Pax">
                         <div class="input-group-append order-0">
                           <div class="input-group-text">
                             <!-- Icon -->
@@ -225,7 +235,7 @@
                     <div class="form-group col-md-1">  
                       <!-- Submit -->
                       <p class="text-center mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-                        <a href="#about-1" class="btn btn-outline-primary text-white">
+                        <a href="#about-1" id="SEND" class="btn btn-outline-primary text-white">
                           Enviar
                         </a>
                       </p>
@@ -259,12 +269,12 @@
               <div class="col-md-6 col-lg-4 offset-lg-1">
 
                 <!-- Heading -->
-                <h2 class="mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="fpAfterLoad">
+                <h2 id="HEADING1" class="mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="fpAfterLoad">
                   Experiencia
                 </h2>
 
                 <!-- Content -->
-                <p class="text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="fpAfterLoad">
+                <p id="TEXT1" class="text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="fpAfterLoad">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?
                 </p>
 
@@ -296,12 +306,12 @@
               <div class="col-md-6 col-lg-4 offset-lg-1 order-md-1">
 
                 <!-- Heading -->
-                <h2 class="mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="fpAfterLoad">
+                <h2 id="HEADING2" class="mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="fpAfterLoad">
                   Calidad y Confort 
                 </h2>
 
                 <!-- Content -->
-                <p class="text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="fpAfterLoad">
+                <p id="TEXT2" class="text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="fpAfterLoad">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores, aperiam. Excepturi assumenda non quasi ipsa quidem harum debitis aut alias dicta. Laudantium reprehenderit ea, suscipit nulla deleniti excepturi repudiandae!
                 </p>
 
@@ -1045,6 +1055,6 @@
 
     <!-- Theme JS -->
     <script src="assets/js/theme.min.js"></script>
-      
+    <script src="./assets//js/script.js"></script>
   </body>
 </html>
