@@ -1,6 +1,6 @@
 
 {
-    "navbar" : {
+    "navBar" : {
         "home": "Home",
         "company": "Empresa",
         "fleet": "Flota",
@@ -19,6 +19,30 @@
         "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?",
         "heading2": "Calidad y confort",
         "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?"
+    },
+    "services": {
+        "Heading": "Servicios",
+        "SubHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading1": "Vuelos privados",
+        "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading2": "Taxi aéreo",
+        "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading3": "Empty Legs",
+        "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae."
+    },
+    "contact": {
+        "heading": "Contacto",
+        "name": "Nombre",
+        "email": "Email",
+        "phone": "Teléfono",
+        "comments": "Comentarios",
+        "send": "Enviar"
+    },
+    "footer": {
+        "copyRight": "© Copyright 2023 Todos los derechos reservados.",
+        "link1": "Términos y condiciones",
+        "link2": "Política de privacidad",
+        "link3": "Contacto"
     }
       
   }
