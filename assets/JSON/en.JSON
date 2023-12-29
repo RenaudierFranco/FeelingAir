@@ -1,0 +1,47 @@
+{
+    "navBar": {
+        "home": "Home",
+        "company": "Company",
+        "fleet": "Fleet",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "quoteForm": {
+        "origin": "Origin",
+        "destination": "Destination",
+        "date": "Date",
+        "pax": "Pax",
+        "send": "Send"
+    },
+    "company": {
+        "heading1": "Experience",
+        "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?",
+        "heading2": "Quality and comfort",
+        "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?"
+    },
+    "services": {
+        "Heading": "Services",
+        "SubHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading1": "Private Flights",
+        "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading2": "Air Charter",
+        "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading3": "Empty Legs",
+        "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae."
+    },
+    "contact": {
+        "heading": "Contact",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "comments": "Comments",
+        "send": "Send"
+    },
+    "footer": {
+        "copyRight": "© Copyright 2023 All rights reserved.",
+        "link1": "Terms and Conditions",
+        "link2": "Privacy Policy",
+        "link3": "Contact"
+    }
+}
+
