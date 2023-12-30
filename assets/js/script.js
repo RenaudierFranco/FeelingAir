@@ -28,12 +28,12 @@ function cargarContenidos() {
         document.getElementById('COMPANY_HEADING_2').innerText = data.company.heading2;
         document.getElementById('COMPANY_TEXT_2').innerText = data.company.text2;
         // Services
-        document.getElementById('SERVICE_SECTION_HEADING').innerText = data.services.heading1;
-        document.getElementById('SERVICE_SECTION_TEXT').innerText = data.services.text1;
-        document.getElementById('SERVICE_SECTION_HEADING_1').innerText = data.services.heading2;
-        document.getElementById('SERVICE_SECTION_TEXT_1').innerText = data.services.text2;
-        document.getElementById('SERVICE_SECTION_HEADING_2').innerText = data.services.heading1;
-        document.getElementById('SERVICE_SECTION_TEXT_2').innerText = data.services.text1;
+        document.getElementById('SERVICE_SECTION_HEADING').innerText = data.services.heading;
+        document.getElementById('SERVICE_SECTION_TEXT').innerText = data.services.subHeading;
+        document.getElementById('SERVICE_SECTION_HEADING_1').innerText = data.services.heading1;
+        document.getElementById('SERVICE_SECTION_TEXT_1').innerText = data.services.text1;
+        document.getElementById('SERVICE_SECTION_HEADING_2').innerText = data.services.heading2;
+        document.getElementById('SERVICE_SECTION_TEXT_2').innerText = data.services.text2;
         document.getElementById('SERVICE_SECTION_HEADING_3').innerText = data.services.heading3;
         document.getElementById('SERVICE_SECTION_TEXT_3').innerText = data.services.text3;
         // Contact Form
