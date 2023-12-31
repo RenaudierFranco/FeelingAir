@@ -2383,7 +2383,7 @@ input[type="button"].btn-block {
 
 .fab {
   color: #FFF;
-}  
+}
 
 .fade {
   -webkit-transition: opacity 0.15s linear;
@@ -10205,14 +10205,16 @@ h1, .h1,
 }
 
 .whatsapp-icon svg {
-  width: 35px;
+  width: 40px;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
 .whatsapp-icon svg:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
+
+
     
     
     

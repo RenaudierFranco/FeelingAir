@@ -35,7 +35,7 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand p-0" href="index.html">
+        <a class="navbar-brand p-0" href="#hero">
           <svg class="" width="171" height="56" viewBox="0 0 245 81" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_323_217)">
             <path class="navbar-brand-svg-i" d="M6.91676 47.3616C7.29332 47.3616 7.44196 47.6238 7.39241 48.0242C7.34287 48.4961 7.20413 48.7535 6.91676 48.825C4.95965 48.6868 3.34442 47.5714 2.00665 45.5169C0.668885 43.4625 0 40.9552 0 38.0285C0 33.3953 1.95711 28.8145 5.81186 24.3195C9.66662 19.8246 15.1118 15.7681 22.0633 12.1264C29.0197 8.55617 37.3138 5.62944 46.9854 3.37957C56.6124 1.13447 67.2501 0 78.8293 0C79.2554 0 79.4437 0.262167 79.404 0.7293C79.3545 1.25363 79.1662 1.4586 78.8293 1.4586C67.3889 1.4586 56.9493 2.52157 47.4165 4.6475C37.8836 6.77344 29.6836 9.54764 22.8164 13.0654C15.9492 16.5165 10.613 20.4156 6.8028 24.7199C2.99264 29.091 1.09003 33.462 1.09003 37.976C1.09003 40.5024 1.66478 42.6093 2.75481 44.4015C3.90926 46.3034 5.28666 47.2949 6.91676 47.3616ZM20.448 44.9068C20.0715 45.045 19.8733 44.9068 19.7841 44.5064C19.6949 44.106 19.7346 43.8438 20.0219 43.5817C21.0228 42.7809 22.4052 41.9944 24.0699 41.2651C25.7347 40.4643 27.6423 39.6777 29.7827 38.9484C30.1196 35.097 30.6349 31.2646 31.2592 27.4846C31.8736 23.7046 32.6019 20.3251 33.3996 17.4174C33.5879 16.8931 33.8753 16.7548 34.1627 17.017C34.45 17.2077 34.5888 17.6081 34.45 18.08C33.687 20.8685 32.9735 24.0383 32.3938 27.7468C31.7794 31.3885 31.3038 35.0302 30.9173 38.6148C33.0578 37.8855 35.3022 37.2229 37.6854 36.6271C40.0142 36.036 42.4073 35.4926 44.7905 35.0398C47.1737 34.5679 49.5123 34.1865 51.7964 33.9053C54.0905 33.6431 56.1813 33.4334 58.1384 33.381C58.515 33.4525 58.6636 33.7099 58.6141 34.1818C58.5646 34.6537 58.4258 34.8443 58.1384 34.8443C56.1813 34.9158 54.0905 35.1065 51.7469 35.3687C49.4529 35.6308 47.0746 36.0312 44.6914 36.5031C42.2586 36.975 39.8804 37.4946 37.4972 38.0905C35.114 38.6815 32.8744 39.3441 30.7786 40.0782C30.6795 41.6655 30.5903 43.1288 30.4912 44.5207C30.3921 45.9126 30.3921 47.2377 30.3921 48.4246C30.3921 49.5591 30.4417 50.5505 30.4912 51.4753C30.5408 52.3285 30.63 53.2008 30.7786 53.8634C30.8777 54.3877 30.729 54.6642 30.402 54.7881C30.0255 54.9263 29.8273 54.7166 29.7381 54.3162C29.5994 53.5869 29.5003 52.7289 29.4507 51.7374C29.4012 50.746 29.3516 49.6115 29.3516 48.4294C29.3516 47.2425 29.4012 45.9745 29.4507 44.6494C29.5003 43.3243 29.5895 41.9324 29.6886 40.5405C27.7315 41.3413 25.9676 42.0563 24.4019 42.7856C22.6925 43.3767 21.4043 44.106 20.448 44.9068Z" fill="currentColor"1"/>
@@ -116,16 +116,19 @@
                 Contacto
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" id="EN" class="nav-link">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="NAVBAR_LENGUAGE" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 en
               </a>
-            </li>  
-            <li class="nav-item">
-              <a href="#" id="ES" class="nav-link">
+              <div class="dropdown-menu">
+              <a id="EN" class="nav-link" style="cursor: pointer;">
+                en
+              </a>
+              <a id="ES" class="nav-link" style="cursor: pointer;">
                 es
               </a>
-            </li> 
+              </div>
+            </li>
           </ul>
 
         </div> <!-- / .navbar-collapse -->
@@ -168,7 +171,7 @@
 
                 <!-- Form -->
                 <form>
-                  <div class="form-row">
+                  <div class="form-row" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
 
                     <div class="form-group col-md-3">
                       <!-- Origen -->
@@ -235,7 +238,7 @@
                     <div class="form-group col-md-1">  
                       <!-- Submit -->
                       <p class="text-center mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-                        <a href="#about-1" id="QUOTE_FORM_SEND" class="btn btn-outline-primary text-white">
+                        <a href="#" id="QUOTE_FORM_SEND" class="btn btn-outline-primary text-white">
                           Enviar
                         </a>
                       </p>
@@ -731,15 +734,18 @@
                 <div class="text-center mb-5">
                   
                   <!-- Icon -->
-                  <div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="fpAfterLoad" onclick="window.location.href='#testimonials'" style="cursor: pointer;">
-                    <span class="icon icon-businessman icon-2x"></span>
+                  <div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="fpAfterLoad">
+                    <a href="#testimonials" style="text-decoration: none;">
+                      <span class="icon icon-businessman icon-2x"></span>
+                    </a> 
                   </div>
 
                   <!-- Heading -->
-                  <h4 id="SERVICE_SECTION_HEADING_1" class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="fpAfterLoad" onclick="window.location.href='#testimonials'" style="cursor: pointer;">
-                    VUELOS PRIVADOS
-                  </h4>
-
+                  <a href="#testimonials" style="text-decoration: none;">
+                    <h4 id="SERVICE_SECTION_HEADING_1" class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="fpAfterLoad">  
+                        VUELOS PRIVADOS
+                    </h4>
+                  </a>
                   <!-- Content -->
                   <p id="SERVICE_SECTION_TEXT_1" class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="fpAfterLoad">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
@@ -754,15 +760,18 @@
                 <div class="text-center mb-5">
                   
                   <!-- Icon -->
-                  <div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="fpAfterLoad" onclick="window.location.href='#testimonials'" style="cursor: pointer;">
-                    <span class="icon icon-comment icon-2x"></span>
+                  <div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="fpAfterLoad">
+                    <a href="#testimonials" style="text-decoration: none;">
+                      <span class="icon icon-marker icon-2x"></span>
+                    </a> 
                   </div>
 
                   <!-- Heading -->
-                  <h4 id="SERVICE_SECTION_HEADING_2" class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="fpAfterLoad" onclick="window.location.href='#testimonials'" style="cursor: pointer;">
-                    TAXI AÉREO
-                  </h4>
-
+                  <a href="#testimonials" style="text-decoration: none;">
+                    <h4 id="SERVICE_SECTION_HEADING_2" class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="fpAfterLoad">
+                        TAXI AÉREO
+                    </h4>
+                  </a>
                   <!-- Content -->
                   <p id="SERVICE_SECTION_TEXT_2" class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="4" data-animation-trigger="fpAfterLoad">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
@@ -777,15 +786,18 @@
                 <div class="text-center mb-5">
                   
                   <!-- Icon -->
-                  <div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="fpAfterLoad" onclick="window.location.href='#testimonials'" style="cursor: pointer;">
-                    <span class="icon icon-edit icon-2x"></span>
+                  <div class="text-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="fpAfterLoad">
+                    <a href="#testimonials" style="text-decoration: none;">
+                      <span class="icon icon-tick icon-2x"></span>
+                    </a> 
                   </div>
 
                   <!-- Heading -->
-                  <h4 id="SERVICE_SECTION_HEADING_3" class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="4" data-animation-trigger="fpAfterLoad" onclick="window.location.href='#testimonials'" style="cursor: pointer;">
-                    EMPTY LEGS
-                  </h4>
-
+                  <a href="#testimonials" style="text-decoration: none;">
+                    <h4 id="SERVICE_SECTION_HEADING_3" class="mb-3" data-toggle="animation" data-animation="fadeUp" data-animation-order="4" data-animation-trigger="fpAfterLoad">
+                        EMPTY LEGS
+                    </h4>
+                  </a>
                   <!-- Content -->
                   <p id="SERVICE_SECTION_TEXT_3" class="text-muted mb-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="5" data-animation-trigger="fpAfterLoad">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa, corporis.
@@ -805,7 +817,7 @@
         <div class="section section-top">
 
           <!-- Cover -->
-          <div class="bg-cover" style="background-image: url(./assets/img/t206.jpeg);"></div>
+          <div class="bg-cover" style="background-image: url(./assets/img/48.jpg);"></div>
           
           <!-- Content -->
           <div class="container">
@@ -826,19 +838,17 @@
                   </h2>
 
                   <!-- Form -->
-                  <form>
+                  <form id="CONTACT_FORM">
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <!-- Name -->
                         <label id="CONTACT_FORM_NAME">Nombre</label>
                         <div class="input-group">
-                          <input type="text" class="form-control order-1" name="contact-name">
+                          <input id="CONTACT_FORM_NAME_INPUT" type="text" class="form-control order-1" name="contact-name">
                           <div class="input-group-append order-0">
                             <div class="input-group-text">
-                              <svg class="input-group-icon icon-offset icon icon-person" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path transform="translate(3 3)" d="
-                                  M0 100 A 50 50 0 0 1 50 60 A 20 20 0 0 1 50 0 A 20 20 0 0 1 50 60 A 50 50 0 0 1 100 100">
-                                </path>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
                               </svg>
                             </div>
                           </div>
@@ -848,13 +858,11 @@
                         <!-- Email -->
                         <label id="CONTACT_FORM_EMAIL">Email</label>
                         <div class="input-group">
-                          <input type="email" class="form-control order-1" name="contact-email">
+                          <input id="CONTACT_FORM_EMAIL_INPUT" type="email" class="form-control order-1" name="contact-email">
                           <div class="input-group-append order-0">
                             <div class="input-group-text">
-                              <svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path transform="translate(3 3)" d="
-                                  M0 30 V 10 H 100 V 90 H 0 V 30 L 50 60 L 100 30">
-                                </path>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                               </svg>
                             </div>
                           </div>
@@ -866,10 +874,10 @@
                         <!-- Phone number -->
                         <label id="CONTACT_FORM_PHONE">Teléfono</label>
                         <div class="input-group">
-                          <input type="text" class="form-control order-1" name="contact-phone">
+                          <input id="CONTACT_FORM_PHONE_INPUT" type="text" class="form-control order-1" name="contact-phone">
                           <div class="input-group-append order-0">
                             <div class="input-group-text">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
                                 <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                                 <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
                               </svg>
@@ -879,14 +887,14 @@
                       </div>
                       <div class="form-group col-md-6">
                         <!-- Message -->
-                        <label>Comentarios</label>
-                        <textarea id="CONTACT_FORM_COMMENTS" class="form-control" name="contact-message" rows="1"></textarea>
+                        <label id="CONTACT_FORM_COMMENTS">Comentarios</label>
+                        <textarea id="CONTACT_FORM_COMMENTS_INPUT" class="form-control" name="contact-message" rows="1" placeholder=". . ."></textarea>
                       </div>
                     </div> <!-- / .form-row --> 
                     <div class="form-row">
                       <div class="col-12">
                         <!-- Submit -->
-                        <button id="CONTACT_FORM_SEND" type="submit" class="btn btn-outline-primary" style="color: #444041; border: solid 1px #444041;">
+                        <button id="CONTACT_FORM_SEND" type="button" class="btn btn-outline-primary" style="color: #444041; border: solid 1px #444041;">
                           Enviar
                         </button>
                         <!-- Reset -->
@@ -1050,8 +1058,6 @@
     ================================================== -->
     <!-- Global JS -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKt8_N4-FKOnhI_pSaDL7g_g-XI1-R9E"></script>
 
     <!-- Plugins JS -->
     <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -1065,7 +1071,7 @@
     <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
     <script src="./assets//js/script.js"></script>
+    <script src="assets/js/theme.min.js"></script>
   </body>
 </html>
