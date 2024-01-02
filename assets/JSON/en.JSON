@@ -23,8 +23,8 @@
         "heading": "Our fleet"
     },
     "services": {
-        "Heading": "Services",
-        "SubHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading": "Services",
+        "subHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
         "heading1": "Private Flights",
         "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
         "heading2": "Air Charter",

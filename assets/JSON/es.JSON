@@ -24,8 +24,8 @@
         "heading": "Nuestra flota"
     },
     "services": {
-        "Heading": "Servicios",
-        "SubHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "heading": "Servicios",
+        "subHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
         "heading1": "Vuelos privados",
         "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
         "heading2": "Taxi aéreo",
