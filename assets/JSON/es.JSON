@@ -20,6 +20,9 @@
         "heading2": "Calidad y confort",
         "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?"
     },
+    "fleet": {
+        "heading": "Nuestra flota"
+    },
     "services": {
         "Heading": "Servicios",
         "SubHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
@@ -43,6 +46,5 @@
         "link1": "Términos y condiciones",
         "link2": "Política de privacidad",
         "link3": "Contacto"
-    }
-      
+    }   
   }
