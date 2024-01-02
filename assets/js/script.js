@@ -29,6 +29,8 @@ function cargarContenidos() {
         document.getElementById('COMPANY_TEXT_1').innerText = data.company.text1;
         document.getElementById('COMPANY_HEADING_2').innerText = data.company.heading2;
         document.getElementById('COMPANY_TEXT_2').innerText = data.company.text2;
+        // Fleet
+        document.getElementById('FLEET_HEADING').innerText = data.fleet.heading;
         // Services
         document.getElementById('SERVICE_SECTION_HEADING').innerText = data.services.heading;
         document.getElementById('SERVICE_SECTION_TEXT').innerText = data.services.subHeading;
