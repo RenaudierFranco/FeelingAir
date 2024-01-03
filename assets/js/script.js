@@ -57,10 +57,7 @@ function cargarContenidos() {
   }
 // Carga el contenido 
   cargarContenidos()
-
-// 
-
-
+  
 // Asigna eventos a los enlaces de idioma
   document.getElementById('EN').addEventListener('click', function () {
       cambiarIdioma('en')
