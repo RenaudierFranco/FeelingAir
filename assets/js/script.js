@@ -149,10 +149,11 @@ function cargarContenidos() {
         formData.contactName = contactName.value;
         formData.contactEmail = contactEmail.value;
         formData.contactPhone = contactPhone.value;
-        formData.contactMessage = contactMessage.valu;
+        formData.contactMessage = contactMessage.value;
 
       console.log(formData);
       document.getElementById('CONTACT_FORM').reset();
+      formData = {};
 
       // Enviar los datos a FIREBASE
     });
