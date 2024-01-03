@@ -1,3 +1,5 @@
+import  {firebaseTest}  from "./services.js";
+
 // Variable idioma
 let idiomaActual = 'en';
 
@@ -152,12 +154,14 @@ function cargarContenidos() {
         formData.contactMessage = contactMessage.value;
 
       console.log(formData);
+      firebaseTest(formData)
       document.getElementById('CONTACT_FORM').reset();
       formData = {};
 
       // Enviar los datos a FIREBASE
     });
   });
+
 
 
   
