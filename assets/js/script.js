@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Enviar datos 
     console.log(formData);
     getQuoteData(formData);
+    document.getElementById('QUOTE_FORM_PERSONAL_DATA').style.visibility = 'hidden'
     setTimeout(() => {
       mostrarModalExito();
     }, 500);
@@ -168,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.contactMessage = contactMessage.value || "";
     // Enviar datos 
     console.log(formData);
-    getQuoteData(formData)
+    getContactData(formData)
     setTimeout(() => {
       mostrarModalExito();
     }, 500);
