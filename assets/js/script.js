@@ -9,82 +9,63 @@ let formData = {}
 // Cargar el archivo de traducción según el idioma actual
 function cargarContenidos() {
 
-  function cargarContenidos() {
-    // JSON con las traducciones
-    fetch(`https://api.github.com/repos/RenaudierFranco/FeelingAir/contents/assets/JSON/${idiomaActual}.JSON`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log('data:', data);
-  
-        // Extraer el contenido del archivo
-        const contenido = atob(data.content);
-        const jsonData = JSON.parse(contenido);
-  
+    //JSON con las traducciones
+    fetch(`https://raw.githubusercontent.com/RenaudierFranco/FeelingAir/main/assets/JSON/${idiomaActual}.JSON`)
+    .then(response => response.json())
+    .then(data => {
+      // Imprimir datos en la consola
+      console.log('data:', data);
         // Navbar
-        document.getElementById('NAVBAR_HOME').innerText = jsonData.navBar.home;
-        document.getElementById('NAVBAR_COMPANY').innerText = jsonData.navBar.company;
-        document.getElementById('NAVBAR_FLEET').innerText = jsonData.navBar.fleet;
-        document.getElementById('NAVBAR_SERVICES').innerText = jsonData.navBar.services;
-        document.getElementById('NAVBAR_CONTACT').innerText = jsonData.navBar.contact;
+        document.getElementById('NAVBAR_HOME').innerText = data.navBar.home;
+        document.getElementById('NAVBAR_COMPANY').innerText = data.navBar.company;
+        document.getElementById('NAVBAR_FLEET').innerText = data.navBar.fleet;
+        document.getElementById('NAVBAR_SERVICES').innerText = data.navBar.services;
+        document.getElementById('NAVBAR_CONTACT').innerText = data.navBar.contact;
         document.getElementById('NAVBAR_LENGUAGE').innerText = idiomaActual;
-  
         // Quote Form Flight
-        document.getElementById('QUOTE_FORM_ORIGIN').placeholder = jsonData.quoteForm.origin;
-        document.getElementById('QUOTE_FORM_DESTINATION').placeholder = jsonData.quoteForm.destination;
-        document.getElementById('QUOTE_FORM_DATE').placeholder = jsonData.quoteForm.date;
-        document.getElementById('QUOTE_FORM_PAX').placeholder = jsonData.quoteForm.pax;
-        document.getElementById('QUOTE_FORM_QUOTE').innerText = jsonData.quoteForm.quote;
-  
+        document.getElementById('QUOTE_FORM_ORIGIN').placeholder = data.quoteForm.origin;
+        document.getElementById('QUOTE_FORM_DESTINATION').placeholder = data.quoteForm.destination;
+        document.getElementById('QUOTE_FORM_DATE').placeholder = data.quoteForm.date;
+        document.getElementById('QUOTE_FORM_PAX').placeholder = data.quoteForm.pax;
+        document.getElementById('QUOTE_FORM_QUOTE').innerText = data.quoteForm.quote;
         // Quote Form Personal Data
-        document.getElementById('QUOTE_FORM_NAME').placeholder = jsonData.quoteForm.name;
-        document.getElementById('QUOTE_FORM_EMAIL').placeholder = jsonData.quoteForm.mail;
-        document.getElementById('QUOTE_FORM_SUBMIT').innerText = jsonData.quoteForm.submit;
-  
+        document.getElementById('QUOTE_FORM_NAME').placeholder = data.quoteForm.name;
+        document.getElementById('QUOTE_FORM_EMAIL').placeholder = data.quoteForm.mail;
+        document.getElementById('QUOTE_FORM_SUBMIT').innerText = data.quoteForm.submit;
         // Company
-        document.getElementById('COMPANY_HEADING_1').innerText = jsonData.company.heading1;
-        document.getElementById('COMPANY_TEXT_1').innerText = jsonData.company.text1;
-        document.getElementById('COMPANY_HEADING_2').innerText = jsonData.company.heading2;
-        document.getElementById('COMPANY_TEXT_2').innerText = jsonData.company.text2;
-  
+        document.getElementById('COMPANY_HEADING_1').innerText = data.company.heading1;
+        document.getElementById('COMPANY_TEXT_1').innerText = data.company.text1;
+        document.getElementById('COMPANY_HEADING_2').innerText = data.company.heading2;
+        document.getElementById('COMPANY_TEXT_2').innerText = data.company.text2;
         // Fleet
-        document.getElementById('FLEET_HEADING').innerText = jsonData.fleet.heading;
-        document.getElementById('FLEET_SUBTITLE').innerText = jsonData.fleet.subtitle;
-  
+        document.getElementById('FLEET_HEADING').innerText = data.fleet.heading;
+        document.getElementById('FLEET_HEADING').innerText = data.fleet.subtitle;
         // Services
-        document.getElementById('SERVICE_SECTION_HEADING').innerText = jsonData.services.heading;
-        document.getElementById('SERVICE_SECTION_TEXT').innerText = jsonData.services.subHeading;
-        document.getElementById('SERVICE_SECTION_HEADING_1').innerText = jsonData.services.heading1;
-        document.getElementById('SERVICE_SECTION_TEXT_1').innerText = jsonData.services.text1;
-        document.getElementById('SERVICE_SECTION_HEADING_2').innerText = jsonData.services.heading2;
-        document.getElementById('SERVICE_SECTION_TEXT_2').innerText = jsonData.services.text2;
-        document.getElementById('SERVICE_SECTION_HEADING_3').innerText = jsonData.services.heading3;
-        document.getElementById('SERVICE_SECTION_TEXT_3').innerText = jsonData.services.text3;
-  
+        document.getElementById('SERVICE_SECTION_HEADING').innerText = data.services.heading;
+        document.getElementById('SERVICE_SECTION_TEXT').innerText = data.services.subHeading;
+        document.getElementById('SERVICE_SECTION_HEADING_1').innerText = data.services.heading1;
+        document.getElementById('SERVICE_SECTION_TEXT_1').innerText = data.services.text1;
+        document.getElementById('SERVICE_SECTION_HEADING_2').innerText = data.services.heading2;
+        document.getElementById('SERVICE_SECTION_TEXT_2').innerText = data.services.text2;
+        document.getElementById('SERVICE_SECTION_HEADING_3').innerText = data.services.heading3;
+        document.getElementById('SERVICE_SECTION_TEXT_3').innerText = data.services.text3;
         // Contact Form
-        document.getElementById('CONTACT_HEADING').innerText = jsonData.contact.heading;
-        document.getElementById('CONTACT_FORM_NAME').innerText = jsonData.contact.name;
-        document.getElementById('CONTACT_FORM_EMAIL').innerText = jsonData.contact.email;
-        document.getElementById('CONTACT_FORM_PHONE').innerText = jsonData.contact.phone;
-        document.getElementById('CONTACT_FORM_COMMENTS').innerText = jsonData.contact.comments;
-        document.getElementById('CONTACT_FORM_SEND').innerText = jsonData.contact.send;
-  
+        document.getElementById('CONTACT_HEADING').innerText = data.contact.heading;
+        document.getElementById('CONTACT_FORM_NAME').innerText = data.contact.name;
+        document.getElementById('CONTACT_FORM_EMAIL').innerText = data.contact.email;
+        document.getElementById('CONTACT_FORM_PHONE').innerText = data.contact.phone;
+        document.getElementById('CONTACT_FORM_COMMENTS').innerText = data.contact.comments;
+        document.getElementById('CONTACT_FORM_SEND').innerText = data.contact.send;
         // Footer
-        document.getElementById('FOOTER_LINK_1').innerText = jsonData.footer.link1;
-        document.getElementById('FOOTER_LINK_2').innerText = jsonData.footer.link2;
-        document.getElementById('FOOTER_LINK_3').innerText = jsonData.footer.link3;
-        document.getElementById('FOOTER_COPY_RIGHT').innerText = jsonData.footer.copyRight;
+        document.getElementById('FOOTER_LINK_1').innerText = data.footer.link1;
+        document.getElementById('FOOTER_LINK_2').innerText = data.footer.link2;
+        document.getElementById('FOOTER_LINK_3').innerText = data.footer.link3;
+        document.getElementById('FOOTER_COPY_RIGHT').innerText = data.footer.copyRight;
       })
       .catch(error => console.error('Error al cargar los contenidos:', error));
   }
-  
-  // Carga el contenido
-  cargarContenidos();
-  
+// Carga el contenido 
+  cargarContenidos()
   
 // Asigna eventos a los enlaces de idioma
   document.getElementById('EN').addEventListener('click', function () {
