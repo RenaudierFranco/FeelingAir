@@ -42,7 +42,6 @@ export function getQuoteData(data) {
     pax: data.pax, 
     name: data.name,
     mail: data.mail,
-    phone: data.phone
     })
     .then(function(docRef) {
         console.log("Documento agregado con ID: ", docRef.id);

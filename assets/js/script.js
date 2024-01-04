@@ -29,7 +29,6 @@ function cargarContenidos() {
         // Quote Form Personal Data
         document.getElementById('QUOTE_FORM_NAME').placeholder = data.quoteForm.name;
         document.getElementById('QUOTE_FORM_EMAIL').placeholder = data.quoteForm.mail;
-        document.getElementById('QUOTE_FORM_PHONE').placeholder = data.quoteForm.phone;
         document.getElementById('QUOTE_FORM_SUBMIT').innerText = data.quoteForm.submit;
         // Company
         document.getElementById('COMPANY_HEADING_1').innerText = data.company.heading1;
@@ -117,8 +116,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let quoteDate = document.getElementById("QUOTE_FORM_DATE").value;
     let quotePax = document.getElementById("QUOTE_FORM_PAX").value;
     let quoteName = document.getElementById("QUOTE_FORM_NAME").value;
-    let quoteMail = document.getElementById("QUOTE_FORM_EMAIL").value;
-    let quotePhone = document.getElementById("QUOTE_FORM_PHONE").value;
+    let quoteMail = document.getElementById("QUOTE_FORM_EMAIL").value || "";
+    // Validar que el quoteMail contenga '@'
+    if (!quoteMail.trim().includes('@')) {
+      document.getElementById("QUOTE_FORM_EMAIL").style.border = '1.5px solid #dc3545'; // Set border to red
+      return; // Detener la ejecución si la validación falla
+    }
+    
     // Datos del formulario
     formData.origin = quoteOrigin || "";
     formData.destination = quoteDestination || "";
@@ -126,11 +130,11 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.pax = quotePax || "";
     formData.name = quoteName || "";
     formData.mail = quoteMail || "";
-    formData.phone = quotePhone || "";
     // Enviar datos 
     console.log(formData);
     getQuoteData(formData);
     document.getElementById('QUOTE_FORM_PERSONAL_DATA').style.visibility = 'hidden'
+    document.getElementById('QUOTE_FORM_QUOTE').style.visibility = 'visible'
     setTimeout(() => {
       mostrarModalExito();
     }, 500);
@@ -182,4 +186,3 @@ document.addEventListener("DOMContentLoaded", function () {
   function mostrarModalExito() {
     $('#successModal').modal('show');
   }
-
