@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let quoteDate = document.getElementById("QUOTE_FORM_DATE").value;
     let quotePax = document.getElementById("QUOTE_FORM_PAX").value;
     let quoteName = document.getElementById("QUOTE_FORM_NAME").value;
-    let quoteMail = document.getElementById("QUOTE_FORM_EMAIL").value || "";
+    let quoteMail = document.getElementById("QUOTE_FORM_EMAIL").value;
     // Validar que el quoteMail contenga '@'
     if (!quoteMail.trim().includes('@')) {
       document.getElementById("QUOTE_FORM_EMAIL").style.border = '1.5px solid #dc3545'; // Set border to red
