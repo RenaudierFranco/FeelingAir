@@ -19,9 +19,9 @@ firebase.initializeApp(firebaseConfig);
 //Funcion para crear la coleccion en Firebase
 export function firebaseTest(data) {
     let db = firebase.firestore();
-    db.collection("comments").add({
+    db.collection("contacts").add({
     campo1: data.contactName,
-    campo2: data.contactName,
+    campo2: data.contactEmail,
     campo3: data.contactPhone,
     campo4: data.contactMessage
     })
