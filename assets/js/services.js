@@ -17,13 +17,32 @@ measurementId: "G-CZ77D49ECS"
 firebase.initializeApp(firebaseConfig);
 
 //Funcion para crear la coleccion en Firebase
-export function firebaseTest(data) {
+export function getContactData(data) {
     let db = firebase.firestore();
     db.collection("contacts").add({
-    campo1: data.contactName,
-    campo2: data.contactEmail,
-    campo3: data.contactPhone,
-    campo4: data.contactMessage
+    name: data.contactName,
+    email: data.contactEmail,
+    phone: data.contactPhone,
+    message: data.contactMessage
+    })
+    .then(function(docRef) {
+        console.log("Documento agregado con ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        console.error("Error al agregar el documento: ", error);
+    });
+};
+//Funcion para crear la coleccion Quote en Firebase
+export function getQuoteData(data) {
+    let db = firebase.firestore();
+    db.collection("quote").add({
+    origin: data.origin,
+    destination: data.destination,
+    date: data.date,
+    pax: data.pax, 
+    name: data.name,
+    mail: data.mail,
+    phone: data.phone
     })
     .then(function(docRef) {
         console.log("Documento agregado con ID: ", docRef.id);

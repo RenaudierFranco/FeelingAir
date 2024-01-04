@@ -1,4 +1,4 @@
-import  {firebaseTest}  from "./services.js";
+import  {getContactData, getQuoteData}  from "./services.js";
 
 // Variable idioma
 let idiomaActual = 'en';
@@ -20,12 +20,17 @@ function cargarContenidos() {
         document.getElementById('NAVBAR_SERVICES').innerText = data.navBar.services;
         document.getElementById('NAVBAR_CONTACT').innerText = data.navBar.contact;
         document.getElementById('NAVBAR_LENGUAGE').innerText = idiomaActual;
-        // Quote Form 
+        // Quote Form Flight
         document.getElementById('QUOTE_FORM_ORIGIN').placeholder = data.quoteForm.origin;
         document.getElementById('QUOTE_FORM_DESTINATION').placeholder = data.quoteForm.destination;
         document.getElementById('QUOTE_FORM_DATE').placeholder = data.quoteForm.date;
         document.getElementById('QUOTE_FORM_PAX').placeholder = data.quoteForm.pax;
-        document.getElementById('QUOTE_FORM_SEND').innerText = data.quoteForm.send;
+        document.getElementById('QUOTE_FORM_QUOTE').innerText = data.quoteForm.quote;
+        // Quote Form Personal Data
+        document.getElementById('QUOTE_FORM_NAME').placeholder = data.quoteForm.name;
+        document.getElementById('QUOTE_FORM_EMAIL').placeholder = data.quoteForm.mail;
+        document.getElementById('QUOTE_FORM_PHONE').placeholder = data.quoteForm.phone;
+        document.getElementById('QUOTE_FORM_SUBMIT').innerText = data.quoteForm.submit;
         // Company
         document.getElementById('COMPANY_HEADING_1').innerText = data.company.heading1;
         document.getElementById('COMPANY_TEXT_1').innerText = data.company.text1;
@@ -33,6 +38,7 @@ function cargarContenidos() {
         document.getElementById('COMPANY_TEXT_2').innerText = data.company.text2;
         // Fleet
         document.getElementById('FLEET_HEADING').innerText = data.fleet.heading;
+        document.getElementById('FLEET_HEADING').innerText = data.fleet.subtitle;
         // Services
         document.getElementById('SERVICE_SECTION_HEADING').innerText = data.services.heading;
         document.getElementById('SERVICE_SECTION_TEXT').innerText = data.services.subHeading;
@@ -84,7 +90,7 @@ function cargarContenidos() {
   });
 
 // Pax Input validation
-    // Agregar un evento onchange al input QUOTE_FORM_PAX
+    // Agregar un evento onChange al input QUOTE_FORM_PAX
     document.getElementById("QUOTE_FORM_PAX").addEventListener("change", function () {
       // Ajustar el valor de pax si está fuera del rango permitido
       let pax = parseFloat(document.getElementById("QUOTE_FORM_PAX").value);
@@ -97,27 +103,38 @@ function cargarContenidos() {
 
 // QuoteForm
 document.addEventListener("DOMContentLoaded", function () {
+  // Aplicar el estilo 'visibility: visible;' al formulario
+  document.getElementById("QUOTE_FORM_QUOTE").addEventListener("click", function () {
+    document.getElementById('QUOTE_FORM_PERSONAL_DATA').style.visibility = 'visible'
+    document.getElementById('QUOTE_FORM_QUOTE').style.visibility = 'hidden'
+  });
+
   // Agregar un evento de escucha al botón Enviar
-  document.getElementById("QUOTE_FORM_SEND").addEventListener("click", function () {
+  document.getElementById("QUOTE_FORM_SUBMIT").addEventListener("click", function () {
     // Obtener valores de quoteForm
-    let origin = document.getElementById("QUOTE_FORM_ORIGIN").value;
-    let destination = document.getElementById("QUOTE_FORM_DESTINATION").value;
-    let date = document.getElementById("QUOTE_FORM_DATE").value;
-    let pax = document.getElementById("QUOTE_FORM_PAX").value;
-
+    let quoteOrigin = document.getElementById("QUOTE_FORM_ORIGIN").value;
+    let quoteDestination = document.getElementById("QUOTE_FORM_DESTINATION").value;
+    let quoteDate = document.getElementById("QUOTE_FORM_DATE").value;
+    let quotePax = document.getElementById("QUOTE_FORM_PAX").value;
+    let quoteName = document.getElementById("QUOTE_FORM_NAME").value;
+    let quoteMail = document.getElementById("QUOTE_FORM_EMAIL").value;
+    let quotePhone = document.getElementById("QUOTE_FORM_PHONE").value;
     // Datos del formulario
-    formData.origin = origin;
-    formData.destination = destination;
-    formData.date = date;
-    formData.pax = pax;
-
+    formData.origin = quoteOrigin || "";
+    formData.destination = quoteDestination || "";
+    formData.date = quoteDate || "";
+    formData.pax = quotePax || "";
+    formData.name = quoteName || "";
+    formData.mail = quoteMail || "";
+    formData.phone = quotePhone || "";
+    // Enviar datos 
     console.log(formData);
-
-    // Redirecciona al formulario de contacto
-    setTimeout(function () {
-      window.location.href = "#testimonials";
+    getQuoteData(formData);
+    setTimeout(() => {
+      mostrarModalExito();
     }, 500);
-
+    document.getElementById('QUOTE_FORM').reset();
+    formData = {};
   });
 });
 
@@ -129,8 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let contactEmail = document.getElementById("CONTACT_FORM_EMAIL_INPUT");
     let contactPhone = document.getElementById("CONTACT_FORM_PHONE_INPUT");
     let contactMessage = document.getElementById("CONTACT_FORM_COMMENTS_INPUT");
-
-    
     // Validar que el nombre contenga al menos 3 caracteres
     if (contactName.value.trim().length < 3) {
       contactName.style.border = '1.5px solid #dc3545'; // Set border to red
@@ -146,16 +161,24 @@ document.addEventListener("DOMContentLoaded", function () {
       contactPhone.style.border = '1.5px solid #dc3545'; // Set border to red
       return; // Detener la ejecución si la validación falla
     }      
-
     // Datos del formulario
-    formData.contactName = contactName.value;
-    formData.contactEmail = contactEmail.value;
-    formData.contactPhone = contactPhone.value;
-    formData.contactMessage = contactMessage.value;
-
+    formData.contactName = contactName.value || "";
+    formData.contactEmail = contactEmail.value || "";
+    formData.contactPhone = contactPhone.value || "";
+    formData.contactMessage = contactMessage.value || "";
+    // Enviar datos 
     console.log(formData);
-    firebaseTest(formData)
+    getQuoteData(formData)
+    setTimeout(() => {
+      mostrarModalExito();
+    }, 500);
     document.getElementById('CONTACT_FORM').reset();
     formData = {};
   });
 });
+
+  // Puedes activar el modal programáticamente cuando la consulta se envía correctamente
+  function mostrarModalExito() {
+    $('#successModal').modal('show');
+  }
+

@@ -11,7 +11,11 @@
         "destination": "Destination",
         "date": "Date",
         "pax": "Pax",
-        "send": "Send"
+        "quote": "Quote",
+        "name": "Name",
+        "mail": "Mail",
+        "phone": "Phone",
+        "submit": "Submit"
     },
     "company": {
         "heading1": "Experience",
@@ -20,7 +24,40 @@
         "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?"
     },
     "fleet": {
-        "heading": "Our fleet"
+        "heading": "Our fleet",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "fleet": [
+            {
+              "title": "Beechcraft B-200",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+              "img": "assets/img/Beechcraft-B200.png"
+            },
+            {
+              "title": "Embraer Phenom 100",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+              "img": "assets/img/Phenom-100.jpg"
+            },
+            {
+              "title": "Pilatus PC-12",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+              "img": "assets/img/Pilatus-PC12.jpg"
+            },
+            {
+              "title": "Cessna Grand Caravan EX",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+              "img": "assets/img/Cessna-208.jpg"
+            },
+            {
+              "title": "Cessna Station Air",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+              "img": "assets/img/Cessna-206.jpg"
+            },
+            {
+              "title": "Piper Seneca II",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+              "img": "assets/img/Piper-Seneca-2.jpg"
+            }
+          ]
     },
     "services": {
         "heading": "Services",
