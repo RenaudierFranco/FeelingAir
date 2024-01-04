@@ -19,11 +19,17 @@ firebase.initializeApp(firebaseConfig);
 //Funcion para crear la coleccion en Firebase
 export function getContactData(data) {
     let db = firebase.firestore();
-    db.collection("contacts").add({
-    name: data.contactName,
-    email: data.contactEmail,
-    phone: data.contactPhone,
-    message: data.contactMessage
+    db.collection("mail").add({
+    to: 'info@feelingair.com.ar',
+        message: {
+            subject: 'Solicitar cotización',
+            html: `
+            Nombre de contacto: ${data.contactName}, <br>
+            Email: ${data.contactEmail}, <br>
+            Número de teléfono: ${data.contactPhone}, <br>
+            Mensaje: ${data.contactMessage}
+            `
+        },
     })
     .then(function(docRef) {
         console.log("Documento agregado con ID: ", docRef.id);
@@ -35,13 +41,20 @@ export function getContactData(data) {
 //Funcion para crear la coleccion Quote en Firebase
 export function getQuoteData(data) {
     let db = firebase.firestore();
-    db.collection("quote").add({
-    origin: data.origin,
-    destination: data.destination,
-    date: data.date,
-    pax: data.pax, 
-    name: data.name,
-    mail: data.mail,
+    db.collection("mail").add({
+        to: 'soria.ign@gmail.com',
+        message: {
+            subject: 'Solicitar cotización',
+            html: `
+            Solicito la contización para un vuelo con el siguiente detalle: <br>
+            Nombre de contacto: ${data.name}, <br>
+            Email: ${data.mail}, <br>
+            Origen: ${data.origin}, <br>
+            Destino: ${data.destination}, <br>
+            Fecha: ${data.date}, <br>
+            Cantidad de pasajeros: ${data.pax} <br>
+            `
+        },
     })
     .then(function(docRef) {
         console.log("Documento agregado con ID: ", docRef.id);
