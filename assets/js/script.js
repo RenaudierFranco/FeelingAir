@@ -96,73 +96,66 @@ function cargarContenidos() {
     });
 
 // QuoteForm
-  document.addEventListener("DOMContentLoaded", function () {
-    // Agregar un evento de escucha al botón Enviar
-    document.getElementById("QUOTE_FORM_SEND").addEventListener("click", function () {
-      // Obtener valores de quoteForm
-      let origin = document.getElementById("QUOTE_FORM_ORIGIN").value;
-      let destination = document.getElementById("QUOTE_FORM_DESTINATION").value;
-      let date = document.getElementById("QUOTE_FORM_DATE").value;
-      let pax = document.getElementById("QUOTE_FORM_PAX").value;
+document.addEventListener("DOMContentLoaded", function () {
+  // Agregar un evento de escucha al botón Enviar
+  document.getElementById("QUOTE_FORM_SEND").addEventListener("click", function () {
+    // Obtener valores de quoteForm
+    let origin = document.getElementById("QUOTE_FORM_ORIGIN").value;
+    let destination = document.getElementById("QUOTE_FORM_DESTINATION").value;
+    let date = document.getElementById("QUOTE_FORM_DATE").value;
+    let pax = document.getElementById("QUOTE_FORM_PAX").value;
 
-      // Datos del formulario
-      formData.origin = origin;
-      formData.destination = destination;
-      formData.date = date;
-      formData.pax = pax;
+    // Datos del formulario
+    formData.origin = origin;
+    formData.destination = destination;
+    formData.date = date;
+    formData.pax = pax;
 
-      console.log(formData);
+    console.log(formData);
 
-      // Redirecciona al formulario de contacto
-      setTimeout(function () {
-        window.location.href = "#testimonials";
-      }, 500);
+    // Redirecciona al formulario de contacto
+    setTimeout(function () {
+      window.location.href = "#testimonials";
+    }, 500);
 
-    });
   });
+});
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Agregar un evento de escucha al botón Enviar
-    document.getElementById("CONTACT_FORM_SEND").addEventListener("click", function () {
-      // Obtener valores de contactForm
-      let contactName = document.getElementById("CONTACT_FORM_NAME_INPUT");
-      let contactEmail = document.getElementById("CONTACT_FORM_EMAIL_INPUT");
-      let contactPhone = document.getElementById("CONTACT_FORM_PHONE_INPUT");
-      let contactMessage = document.getElementById("CONTACT_FORM_COMMENTS_INPUT");
+document.addEventListener("DOMContentLoaded", function () {
+  // Agregar un evento de escucha al botón Enviar
+  document.getElementById("CONTACT_FORM_SEND").addEventListener("click", function () {
+    // Obtener valores de contactForm
+    let contactName = document.getElementById("CONTACT_FORM_NAME_INPUT");
+    let contactEmail = document.getElementById("CONTACT_FORM_EMAIL_INPUT");
+    let contactPhone = document.getElementById("CONTACT_FORM_PHONE_INPUT");
+    let contactMessage = document.getElementById("CONTACT_FORM_COMMENTS_INPUT");
 
-      
-      // Validar que el nombre contenga al menos 5 caracteres
-      if (contactName.value.trim().length < 5) {
-        contactName.style.border = '1.5px solid #dc3545'; // Set border to red
-        return; // Stop execution if validation fails
-      }
-      // Validar que el correo electrónico contenga '@'
-      if (!contactEmail.value.trim().includes('@')) {
-        contactEmail.style.border = '1.5px solid #dc3545'; // Set border to red
-        return; // Detener la ejecución si la validación falla
-      }
-      // Validar que el teléfono contenga solo números
-      if (!/^\d+$/.test(contactPhone.value.trim())) {
-        contactPhone.style.border = '1.5px solid #dc3545'; // Set border to red
-        return; // Detener la ejecución si la validación falla
-      }      
+    
+    // Validar que el nombre contenga al menos 3 caracteres
+    if (contactName.value.trim().length < 3) {
+      contactName.style.border = '1.5px solid #dc3545'; // Set border to red
+      return; // Stop execution if validation fails
+    }
+    // Validar que el correo electrónico contenga '@'
+    if (!contactEmail.value.trim().includes('@')) {
+      contactEmail.style.border = '1.5px solid #dc3545'; // Set border to red
+      return; // Detener la ejecución si la validación falla
+    }
+    // Validar que el teléfono contenga solo números
+    if (!/^\d+$/.test(contactPhone.value.trim())) {
+      contactPhone.style.border = '1.5px solid #dc3545'; // Set border to red
+      return; // Detener la ejecución si la validación falla
+    }      
 
-      // Datos del formulario
-        formData.contactName = contactName.value;
-        formData.contactEmail = contactEmail.value;
-        formData.contactPhone = contactPhone.value;
-        formData.contactMessage = contactMessage.value;
+    // Datos del formulario
+    formData.contactName = contactName.value;
+    formData.contactEmail = contactEmail.value;
+    formData.contactPhone = contactPhone.value;
+    formData.contactMessage = contactMessage.value;
 
-      console.log(formData);
-      firebaseTest(formData)
-      document.getElementById('CONTACT_FORM').reset();
-      formData = {};
-
-      // Enviar los datos a FIREBASE
-    });
+    console.log(formData);
+    firebaseTest(formData)
+    document.getElementById('CONTACT_FORM').reset();
+    formData = {};
   });
-
-
-
-  
-  
+});
