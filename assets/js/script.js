@@ -10,8 +10,9 @@ let formData = {}
 function cargarContenidos() {
 
     //JSON con las traducciones
-    fetch(`https://api.github.com/repos/RenaudierFranco/FeelingAir/contents/assets/JSON/en.JSON`)
+    fetch(`https://api.github.com/repos/RenaudierFranco/FeelingAir/contents/assets/JSON/${idiomaActual}.JSON`)
       .then(response => response.json())
+      .then(console.log('data:', data))
       .then(data => {
         // Navbar
         document.getElementById('NAVBAR_HOME').innerText = data.navBar.home;
