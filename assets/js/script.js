@@ -10,7 +10,7 @@ let formData = {}
 function cargarContenidos() {
 
     //JSON con las traducciones
-    fetch(`/assets/JSON/${idiomaActual}.json`)
+    fetch(`https://github.com/RenaudierFranco/FeelingAir/blob/main/assets/JSON/${idiomaActual}.JSON`)
       .then(response => response.json())
       .then(data => {
         // Navbar
