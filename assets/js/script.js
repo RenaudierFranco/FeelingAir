@@ -10,7 +10,7 @@ let formData = {}
 function cargarContenidos() {
 
     //JSON con las traducciones
-    fetch(`/assets/JSON/${idiomaActual}.JSON`)
+    fetch(`/assets/JSON/${idiomaActual}.json`)
       .then(response => response.json())
       .then(data => {
         // Navbar
