@@ -4,13 +4,13 @@ import { getFirestore, collection, addDoc } from "https://www.gstatic.com/fireba
 
 // Reemplaza con la configuración de tu proyecto Firebase
 let firebaseConfig = {
-apiKey: "AIzaSyAAHtOpvEcvXXkY0X60cBp4I8rVb2JBY7w",
-authDomain: "feeling-air.firebaseapp.com",
-projectId: "feeling-air",
-storageBucket: "feeling-air.appspot.com",
-messagingSenderId: "285909630284",
-appId: "1:285909630284:web:2cb51913351f61c091e3e9",
-measurementId: "G-CZ77D49ECS"
+    apiKey: "AIzaSyAAHtOpvEcvXXkY0X60cBp4I8rVb2JBY7w",
+    authDomain: "feeling-air.firebaseapp.com",
+    projectId: "feeling-air",
+    storageBucket: "feeling-air.appspot.com",
+    messagingSenderId: "285909630284",
+    appId: "1:285909630284:web:2cb51913351f61c091e3e9",
+    measurementId: "G-CZ77D49ECS"
 };
 
 // Inicializa Firebase

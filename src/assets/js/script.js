@@ -13,8 +13,6 @@ function cargarContenidos() {
     fetch(`https://raw.githubusercontent.com/RenaudierFranco/FeelingAir/main/assets/JSON/${idiomaActual}.JSON`)
     .then(response => response.json())
     .then(data => {
-      // Imprimir datos en la consola
-      console.log('data:', data);
         // Navbar
         document.getElementById('NAVBAR_HOME').innerText = data.navBar.home;
         document.getElementById('NAVBAR_COMPANY').innerText = data.navBar.company;
@@ -133,7 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.name = quoteName || "";
     formData.mail = quoteMail || "";
     // Enviar datos 
-    console.log(formData);
     getQuoteData(formData);
     document.getElementById('QUOTE_FORM_PERSONAL_DATA').style.visibility = 'hidden'
     document.getElementById('QUOTE_FORM_QUOTE').style.visibility = 'visible'
@@ -174,7 +171,6 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.contactPhone = contactPhone.value || "";
     formData.contactMessage = contactMessage.value || "";
     // Enviar datos 
-    console.log(formData);
     getContactData(formData)
     setTimeout(() => {
       mostrarModalExito();
