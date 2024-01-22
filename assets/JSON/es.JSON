@@ -20,13 +20,13 @@
       },
     "company": {
         "heading1": "Experiencia",
-        "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?",
+        "text1": "Nuestras opciones de vuelo ofrecen un toque de lujo junto con estándares de calidad internacional. Ofrecemos cotizaciones en el momento, adaptándonos a tus necesidades con eficiencia.",
         "heading2": "Calidad y confort",
-        "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?"
+        "text2": "Brindamos una experiencia de vuelo única y personalizada. Experimente la elegancia de una forma accesible y disfrute de un viaje que refleja lo mejor en confort y tecnología."
     },
     "fleet": {
         "heading": "Nuestra flota",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "subtitle": "Nuestra flota de aeronaves de lujo le permite llegar directamente a destinos inalcanzables para los vuelos comerciales, proporcionándole acceso exclusivo a lugares remotos y experiencias inigualables. Respaldado por una tripulación altamente capacitada y profesional.",
         "fleet": [
             {
                 "title": "Beechcraft B-200",
@@ -63,13 +63,13 @@
     },
     "services": {
         "heading": "Servicios",
-        "subHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "subHeading": "Descubra nuestros servicios diseñados especialmente para usted.",
         "heading1": "Vuelos privados",
-        "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "text1": "Sin check-in, sin esperas, adaptados exclusivamente a sus necesidades.",
         "heading2": "Taxi aéreo",
-        "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "text2": "Llegue a los destinos que desee de manera directa, optimizando su tiempo al máximo.",
         "heading3": "Empty Legs",
-        "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae."
+        "text3": "Aproveche nuestras ofertas de último momento. Contáctenos para obtener más información."
     },
     "contact": {
         "heading": "Contacto",

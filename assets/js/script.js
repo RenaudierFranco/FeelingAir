@@ -1,7 +1,7 @@
 import  {getContactData, getQuoteData}  from "./services.js";
 
 // Variable idioma
-let idiomaActual = 'en';
+let idiomaActual = 'es';
 
 // Form data
 let formData = {}
@@ -10,7 +10,7 @@ let formData = {}
 function cargarContenidos() {
 
     //JSON con las traducciones
-    fetch(`https://raw.githubusercontent.com/RenaudierFranco/FeelingAir/main/assets/JSON/${idiomaActual}.JSON`)
+    fetch(`./assets/JSON/${idiomaActual}.JSON`)
     .then(response => response.json())
     .then(data => {
         // Navbar
@@ -37,7 +37,7 @@ function cargarContenidos() {
         document.getElementById('COMPANY_TEXT_2').innerText = data.company.text2;
         // Fleet
         document.getElementById('FLEET_HEADING').innerText = data.fleet.heading;
-        document.getElementById('FLEET_HEADING').innerText = data.fleet.subtitle;
+        document.getElementById('FLEET_SUBTITLE').innerText = data.fleet.subtitle;
         // Services
         document.getElementById('SERVICE_SECTION_HEADING').innerText = data.services.heading;
         document.getElementById('SERVICE_SECTION_TEXT').innerText = data.services.subHeading;
