@@ -1,7 +1,7 @@
 import  {getContactData, getQuoteData}  from "./services.js";
 
 // Variable idioma
-let idiomaActual = 'es';
+let idiomaActual = 'en';
 
 // Form data
 let formData = {}
@@ -13,13 +13,14 @@ function cargarContenidos() {
     fetch(`./assets/JSON/${idiomaActual}.JSON`)
     .then(response => response.json())
     .then(data => {
+      console.log(data)
         // Navbar
         document.getElementById('NAVBAR_HOME').innerText = data.navBar.home;
         document.getElementById('NAVBAR_COMPANY').innerText = data.navBar.company;
         document.getElementById('NAVBAR_FLEET').innerText = data.navBar.fleet;
         document.getElementById('NAVBAR_SERVICES').innerText = data.navBar.services;
         document.getElementById('NAVBAR_CONTACT').innerText = data.navBar.contact;
-        document.getElementById('NAVBAR_LENGUAGE').innerText = idiomaActual;
+        document.getElementById('NAVBAR_LENGUAGE').innerHTML = data.navBar.flag;
         // Quote Form Flight
         document.getElementById('QUOTE_FORM_ORIGIN').placeholder = data.quoteForm.origin;
         document.getElementById('QUOTE_FORM_DESTINATION').placeholder = data.quoteForm.destination;
@@ -135,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('QUOTE_FORM_PERSONAL_DATA').style.visibility = 'hidden'
     document.getElementById('QUOTE_FORM_QUOTE').style.visibility = 'visible'
     setTimeout(() => {
-      mostrarModalExito();
+      showModalSucces();
     }, 500);
     document.getElementById('QUOTE_FORM').reset();
     formData = {};
@@ -173,14 +174,71 @@ document.addEventListener("DOMContentLoaded", function () {
     // Enviar datos 
     getContactData(formData)
     setTimeout(() => {
-      mostrarModalExito();
+      showModalSucces();
     }, 500);
     document.getElementById('CONTACT_FORM').reset();
     formData = {};
   });
 });
 
-  // Puedes activar el modal programáticamente cuando la consulta se envía correctamente
-  function mostrarModalExito() {
+  // Activar el modal programáticamente cuando la consulta se envía correctamente
+  function showModalSucces() {
     $('#successModal').modal('show');
   }
+
+// Cargar carrousel
+function fillSlider() {
+  fetch('../assets/JSON/airplanes.JSON')
+    .then(response => response.json())
+    .then(data => {
+      // Lógica para manejar los datos después de la carga exitosa
+      console.log(data);
+      createSliderItems(data);
+    })
+    .catch(error => console.error('Error al cargar los contenidos:', error));
+}
+
+function createSliderItems(items) {
+  let sliderComponent = document.getElementById('SLIDER')
+  items.forEach(item => {
+    console.log('item')
+    let sliderItem = `
+      <!-- Slider Item -->
+      <div class="slider-item col-12 col-md-10 col-lg-6">               
+        <!-- Item -->
+        <div class="position-relative">
+          <!-- Card -->
+          <a class="card border-0" href="shop-item.html">                   
+            <!-- Image -->
+            <img src="assets/img/Cessna-208.jpg" alt="..." class="card-img">                   
+            <!-- Body -->
+            <div class="card-body">
+              <div class="row align-items-center mb-3">
+                <div class="col">
+                  <!-- Heading -->
+                  <h4 class="card-title mb-0">
+                    Cessna Grand Caravan EX
+                  </h4>                         
+                </div>
+              </div> <!-- / .row -->
+              <!-- Text -->
+              <ul class="mb-0 text-sm text-muted">
+                <li> Capacidad máxima pax: 14</li>
+                <li>Velocidad crucero: 185 ktas</li>
+                <li>Alcance: 912 nm</li>
+                <li>Tipo de motor: Turboprop / Piston / Jet</li>
+                <li>Pista en que opera: Asfalto/Pasto</li>
+                <li>Toilette: SI / NO</li>
+              </ul>                      
+            </div>
+          </a>
+        </div>   
+      </div>
+      `;
+
+    sliderComponent += sliderItem;
+  });
+}
+
+  fillSlider()
+
