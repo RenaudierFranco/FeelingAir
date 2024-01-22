@@ -18,14 +18,14 @@
         "submit": "Submit"
     },
     "company": {
-        "heading1": "Experience",
-        "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?",
+        "heading1": "About us",
+        "text1": "We are a non-scheduled air transport company dedicated to designing each trip tailored to our clients. We hold all the certifications required by the Argentine Aeronautical Authority (ANAC) for both our aircraft and crew under Part 135 regulations. We possess a fleet that enables us to operate in all authorized airports and unpaved runways across the country, always ensuring safety, privacy, and comfort.",
         "heading2": "Quality and comfort",
         "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?"
     },
     "fleet": {
         "heading": "Our fleet",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "subtitle": "Our entire fleet and crew adhere to the highest standards of quality and safety",
         "fleet": [
             {
               "title": "Beechcraft B-200",
@@ -62,12 +62,12 @@
     "services": {
         "heading": "Services",
         "subHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
-        "heading1": "Private Flights",
-        "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
-        "heading2": "Air Charter",
-        "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
-        "heading3": "Empty Legs",
-        "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae."
+        "heading1": "Private Flights / Charter",
+        "text1": "Customized flights designed to meet each client's needs. Safety, privacy, comfort, and the finest on-board catering. We operate in all types of airports, airfields, and authorized runways within the country and neighboring countries",
+        "heading2": "Empty Legs",
+        "text2": "Last-minute opportunities. Register for more information.",
+        "heading3": "Aircraft Management",
+        "text3": "We offer aircraft management, operation, and maintenance services for third-party aircraft."
     },
     "contact": {
         "heading": "Contact",

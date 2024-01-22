@@ -19,14 +19,14 @@
         "submit": "Enviar"
       },
     "company": {
-        "heading1": "Experiencia",
-        "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?",
+        "heading1": "Sobre Nosotros",
+        "text1": "Somos una compañía de transporte aéreo no regular dedicada a diseñar cada viaje a la medida de nuestros clientes. Contamos con todas las certificaciones exigidas por la autoridad aeronáutica argentina/ ANAC tanto para nuestros aviones como para nuestra tripulación /135. Poseemos una flota que nos permite operar en todos los aeropuertos y pistas no preparadas autorizadas del país garantizando siempre la Seguridad, la privacidad y el confort.",
         "heading2": "Calidad y confort",
         "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora dolor quas, rerum eligendi neque doloribus! Odio ullam consequatur incidunt veniam error inventore, maiores blanditiis, a, voluptatum dolore in qui?"
     },
     "fleet": {
         "heading": "Nuestra flota",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
+        "subtitle":"Toda nuestra flota y tripulación cuenta con los más altos estándares de calidad y seguridad.",
         "fleet": [
             {
                 "title": "Beechcraft B-200",
@@ -64,12 +64,12 @@
     "services": {
         "heading": "Servicios",
         "subHeading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
-        "heading1": "Vuelos privados",
-        "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
-        "heading2": "Taxi aéreo",
-        "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.",
-        "heading3": "Empty Legs",
-        "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae."
+        "heading1": "Vuelos Privados / Chárter",
+        "text1": "Vuelos personalizados y diseñados a la medida de cada cliente. Seguridad, privacidad, confort y el mejor catering a bordo. Operamos en todo tipo de aeropuertos, aeródromos  y pistas habilitadas dentro del país y en países limítrofes. ",
+        "heading2": "Empty Legs",
+        "text2": "Oportunidades de último momento. Registrate para mayor información",
+        "heading3": "Administración de aeronaves",
+        "text3": "Contamos con el servicio de administración, operación y mantenimiento de aeronaves de terceros."
     },
     "contact": {
         "heading": "Contacto",
