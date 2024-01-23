@@ -10214,6 +10214,14 @@ h1, .h1,
   transform: scale(1.3);
 }
 
+/* Flag Icon */
+#flag-icons-us{
+  width: 25px;
+}
+#flag-icons-ar{
+  width: 25px;
+}
+
 
     
     

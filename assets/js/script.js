@@ -10,16 +10,17 @@ let formData = {}
 function cargarContenidos() {
 
     //JSON con las traducciones
-    fetch(`https://raw.githubusercontent.com/RenaudierFranco/FeelingAir/main/assets/JSON/${idiomaActual}.JSON`)
+    fetch(`./assets/JSON/${idiomaActual}.JSON`)
     .then(response => response.json())
     .then(data => {
+      console.log(data)
         // Navbar
         document.getElementById('NAVBAR_HOME').innerText = data.navBar.home;
         document.getElementById('NAVBAR_COMPANY').innerText = data.navBar.company;
         document.getElementById('NAVBAR_FLEET').innerText = data.navBar.fleet;
         document.getElementById('NAVBAR_SERVICES').innerText = data.navBar.services;
         document.getElementById('NAVBAR_CONTACT').innerText = data.navBar.contact;
-        document.getElementById('NAVBAR_LENGUAGE').innerText = idiomaActual;
+        document.getElementById('NAVBAR_LENGUAGE').innerHTML = data.navBar.flag;
         // Quote Form Flight
         document.getElementById('QUOTE_FORM_ORIGIN').placeholder = data.quoteForm.origin;
         document.getElementById('QUOTE_FORM_DESTINATION').placeholder = data.quoteForm.destination;
@@ -37,7 +38,7 @@ function cargarContenidos() {
         document.getElementById('COMPANY_TEXT_2').innerText = data.company.text2;
         // Fleet
         document.getElementById('FLEET_HEADING').innerText = data.fleet.heading;
-        document.getElementById('FLEET_HEADING').innerText = data.fleet.subtitle;
+        document.getElementById('FLEET_SUBTITLE').innerText = data.fleet.subtitle;
         // Services
         document.getElementById('SERVICE_SECTION_HEADING').innerText = data.services.heading;
         document.getElementById('SERVICE_SECTION_TEXT').innerText = data.services.subHeading;
@@ -135,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('QUOTE_FORM_PERSONAL_DATA').style.visibility = 'hidden'
     document.getElementById('QUOTE_FORM_QUOTE').style.visibility = 'visible'
     setTimeout(() => {
-      mostrarModalExito();
+      showModalSucces();
     }, 500);
     document.getElementById('QUOTE_FORM').reset();
     formData = {};
@@ -173,14 +174,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Enviar datos 
     getContactData(formData)
     setTimeout(() => {
-      mostrarModalExito();
+      showModalSucces();
     }, 500);
     document.getElementById('CONTACT_FORM').reset();
     formData = {};
   });
 });
 
-  // Puedes activar el modal programáticamente cuando la consulta se envía correctamente
-  function mostrarModalExito() {
+  // Activar el modal programáticamente cuando la consulta se envía correctamente
+  function showModalSucces() {
     $('#successModal').modal('show');
   }
+
+
