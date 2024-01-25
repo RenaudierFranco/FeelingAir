@@ -20,7 +20,7 @@ firebase.initializeApp(firebaseConfig);
 export function getContactData(data) {
     let db = firebase.firestore();
     db.collection("mail").add({
-    to: 'soria.ign@gmail.com',
+    to: 'info@feelingair.com.ar',
         message: {
             subject: 'Solicitar cotización',
             html: `
@@ -42,7 +42,7 @@ export function getContactData(data) {
 export function getQuoteData(data) {
     let db = firebase.firestore();
     db.collection("mail").add({
-        to: 'soria.ign@gmail.com',
+        to: 'info@feelingair.com.ar',
         message: {
             subject: 'Solicitar cotización',
             html: `
