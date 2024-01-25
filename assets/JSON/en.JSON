@@ -1,7 +1,7 @@
 {
     "navBar": {
         "home": "Home",
-        "company": "About us",
+        "company": "About Us",
         "fleet": "Fleet",
         "services": "Services",
         "contact": "Contact",
@@ -25,7 +25,7 @@
       "text2": "We provide a unique and personalized flight experience. Experience the elegance in an affordable way and enjoy a journey that reflects the best in comfort and technology."
     },
     "fleet": {
-        "heading": "Our fleet",
+        "heading": "Our Fleet",
         "subtitle": "Our entire fleet and crew adhere to the highest standards of quality and safety",
         "specifications": {
           "capacity": "Capacity",
@@ -35,13 +35,13 @@
         }
     },
     "services": {
-      "heading": "SERVICES",
+      "heading": "Services",
       "subHeading": "Discover our services designed especially for you.",
-      "heading1": "PRIVATE FLIGHTS / CHARTER",
+      "heading1": "Private Flights / Charter",
       "text1": "No check-ins, no waiting, tailored exclusively to your needs.",
-      "heading2": "EMPTY LEGS",
+      "heading2": "Empty Legs",
       "text2": "Last-minute opportunities. Register for more information.",
-      "heading3": "AIRCRAFT MANAGEMENT",
+      "heading3": "Aicraft Management",
       "text3": "We offer third-party aircraft management, operation, and maintenance services."
     },
     "contact": {
