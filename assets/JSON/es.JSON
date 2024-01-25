@@ -20,7 +20,7 @@
         "submit": "Enviar"
       },
     "company": {
-        "heading1": "Sobre Nosotros",
+        "heading1": "Sobre nosotros",
         "text1": "Somos una compañía de transporte aéreo no regular dedicada a diseñar cada viaje a la medida de nuestros clientes. Contamos con todas las certificaciones exigidas por la Autoridad Aeronáutica Argentina (ANAC) tanto para nuestros aviones como para nuestra tripulación. Poseemos una flota que nos permite operar en todos los aeropuertos y pistas no preparadas autorizadas del país garantizando siempre la Seguridad, la privacidad y el confort.",
         "heading2": "Calidad y confort",
         "text2": "Brindamos una experiencia de vuelo única y personalizada. Experimente la elegancia de una forma accesible y disfrute de un viaje que refleja lo mejor en confort y tecnología."
@@ -36,13 +36,13 @@
         }          
     },
     "services": {
-      "heading": "SERVICIOS",
+      "heading": "Servicios",
       "subHeading": "Descubra nuestros servicios diseñados especialmente para usted.",
-      "heading1": "VUELOS PRIVADOS / CHARTER",
+      "heading1": "Vuelos privados",
       "text1": "Sin check-in, sin esperas, adaptados exclusivamente a sus necesidades.",
-      "heading2": "EMPTY LEGS",
-      "text2": "Oportunidades de último momento. Registrese para mayor información",
-      "heading3": "ADMINISTRACIÓN DE AERONAVES",
+      "heading2": "Empty legs",
+      "text2": "Oportunidades de último momento. Registrese para mayor información.",
+      "heading3": "Administración de aeronaves",
       "text3": "Contamos con el servicio de administración, operación y mantenimiento de aeronaves de terceros."
     },
     "contact": {
