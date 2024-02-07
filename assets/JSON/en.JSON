@@ -8,21 +8,21 @@
         "flag": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"flag-icons-us\" viewBox=\"0 0 640 480\">\n<path fill=\"#bd3d44\" d=\"M0 0h640v480H0\"/>\n<path stroke=\"#fff\" stroke-width=\"37\" d=\"M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640\"/>\n<path fill=\"#192f5d\" d=\"M0 0h364.8v258.5H0\"/>\n<marker id=\"us-a\" markerHeight=\"30\" markerWidth=\"30\">\n  <path fill=\"#fff\" d=\"m14 0 9 27L0 10h28L5 27z\"/>\n</marker>\n<path fill=\"none\" marker-mid=\"url(#us-a)\" d=\"m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z\"/>\n</svg>"
     },
     "quoteForm": {
-        "departure": "Departure",
-        "arrival": "Arrival",
+        "departure": "From",
+        "arrival": "To",
         "date": "Date",
         "pax": "Pax",
         "quote": "Quote",
         "name": "Name",
-        "mail": "Mail",
+        "mail": "Email",
         "phone": "Phone",
         "submit": "Submit"
     },
     "company": {
       "heading1": "About us",
-      "text1": "We are a non-regular air transport company dedicated to desing each trip tailored to our clients. We hold all certifications required by the Argentine aeronautical authority (ANAC) for both our aircraft and crew members. We have a fleet that allows us to operate in all authorized airports and unprepared runways in the country, always ensuring safety, privacy, and comfort.",
+      "text1": "We are a non-scheduled air transport company dedicated to tailor each trip to our clients. We hold all certifications required by the ANAC (National Civil Aviation Administration) for both our aircrafts and crew members. We have a fleet that allows us to operate in all authorized airports and unprepared runways in the country, always ensuring safety, privacy, and comfort.",
       "heading2": "Quality and comfort",
-      "text2": "We provide a unique and personalized flight experience. Experience the elegance in an affordable way and enjoy a journey that reflects the best in comfort and technology."
+      "text2": "We provide a unique and personalized flight experience. Experience elegance in an affordable way and enjoy a flight that has the best in comfort and technology."
     },
     "fleet": {
         "heading": "Our fleet",
@@ -47,7 +47,7 @@
     "contact": {
       "heading": "Contact",
       "name": "Name",
-      "email": "Mail",
+      "email": "Email",
       "phone": "Phone",
       "comments": "Comments",
       "send": "Submit"
@@ -59,8 +59,8 @@
       "link3": "AA2000"
     },
     "modal": {
-      "title": "Your question was sent successfully",
-      "body": "Thank you for contacting us! We will contact you quickly."
+      "title": "Your question was sucessfully sent.",
+      "body": "Thank you for reaching out! We will contact you quickly."
     }
 }
 

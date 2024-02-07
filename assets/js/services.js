@@ -22,7 +22,7 @@ export function getContactData(data) {
     db.collection("mail").add({
     to: 'info@feelingair.com.ar',
         message: {
-            subject: 'Solicitar cotización',
+            subject: 'Mensaje de contacto',
             html: `
             Nombre de contacto: ${data.contactName}, <br>
             Email: ${data.contactEmail}, <br>
@@ -32,7 +32,7 @@ export function getContactData(data) {
         },
     })
     .then(function(docRef) {
-        console.log("Documento agregado con ID: ", docRef.id);
+        //console.log("Documento agregado con ID: ", docRef.id);
     })
     .catch(function(error) {
         console.error("Error al agregar el documento: ", error);
@@ -57,7 +57,7 @@ export function getQuoteData(data) {
         },
     })
     .then(function(docRef) {
-        console.log("Documento agregado con ID: ", docRef.id);
+        //console.log("Documento agregado con ID: ", docRef.id);
     })
     .catch(function(error) {
         console.error("Error al agregar el documento: ", error);

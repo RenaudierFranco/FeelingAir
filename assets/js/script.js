@@ -13,7 +13,7 @@ function cargarContenidos() {
     fetch(`./assets/JSON/${idiomaActual}.JSON`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      //console.log(data)
         // Navbar
         document.getElementById('NAVBAR_HOME').innerText = data.navBar.home;
         document.getElementById('NAVBAR_COMPANY').innerText = data.navBar.company;
@@ -195,7 +195,6 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(`./assets/JSON/airplanes.JSON`)
     .then(response => response.json())
     .then(data => {
-      console.log('airplanes ',data)
       for(let item of data){
         let sliderItem = `
         <div class="slider-item col-12 col-md-10 col-lg-6">               
