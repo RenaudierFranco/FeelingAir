@@ -118,6 +118,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let quoteOrigin = document.getElementById("QUOTE_FORM_ORIGIN").value;
     let quoteDestination = document.getElementById("QUOTE_FORM_DESTINATION").value;
     let quoteDate = document.getElementById("QUOTE_FORM_DATE").value;
+        // Split the captured date into its components (year, month, day)
+        let dateComponents = quoteDate.split('-');
+    
+        // Get the day, month, and year in the new order (day-month-year)
+        let day = dateComponents[2];
+        let month = dateComponents[1];
+        let year = dateComponents[0];
+        
+        // Format the date into the new format (day-month-year)
+        quoteDate = day + '-' + month + '-' + year;
     let quotePax = document.getElementById("QUOTE_FORM_PAX").value;
     let quoteName = document.getElementById("QUOTE_FORM_NAME").value;
     let quoteMail = document.getElementById("QUOTE_FORM_EMAIL").value;
