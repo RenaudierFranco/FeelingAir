@@ -22,7 +22,7 @@ export function getContactData(data) {
 
     // info@feelingair.com.ar
     db.collection("mail").add({
-    to: 'isoria@feelingair.com.ar',
+    to: 'info@feelingair.com.ar',
         message: {
             subject: 'Mensaje de contacto',
             html: `
@@ -41,7 +41,7 @@ export function getContactData(data) {
     });
     // reservations@hyh.com.ar 
     db.collection("mail").add({
-    to: 'soria.ign@gmail.com',
+    to: 'reservations@hyh.com.ar',
         message: {
             subject: 'Mensaje de contacto',
             html: `
@@ -74,7 +74,7 @@ export function getQuoteData(data) {
     let db = firebase.firestore();
     // info@feelingair.com.ar
     db.collection("mail").add({
-        to: 'soria.ign@gmail.com',
+        to: 'info@feelingair.com.ar',
         message: {
             subject: 'Solicitar cotización',
             html: `
@@ -96,7 +96,7 @@ export function getQuoteData(data) {
     });
     // reservations@hyh.com.ar
     db.collection("mail").add({
-        to: 'soria.ign@gmail.com',
+        to: 'reservations@hyh.com.ar',
         message: {
             subject: 'Solicitar cotización',
             html: `
@@ -124,7 +124,7 @@ export function getQuoteData(data) {
                 +54 9 3525 45-7917<br>
                 info@feelingair.com.ar<br>
                 Posta de San Pedro 1315 - Sinsacate, Córdoba, Argentina <br> <br>
-                <img src="https://www.feelingair.com.ar/images/logo2.png" alt="Feeling Air" width="200">
+                <img src="https://raw.githubusercontent.com/RenaudierFranco/FeelingAir/main/assets/img/logo.png" alt="Feeling Air" width="200">
                 `
             },
         })

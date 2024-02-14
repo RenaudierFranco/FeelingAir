@@ -10222,6 +10222,26 @@ h1, .h1,
   width: 25px;
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.fp-element {
+  view-timeline-name: --elements;
+  view-timeline-axis: block;
+  animation-timeline: --elements;
+  animation-name: show;
+  animation-range: 20% cover 25%;
+  animation-fill-mode: both;
+}
+
 
     
     
