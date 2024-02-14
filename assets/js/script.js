@@ -212,6 +212,29 @@ $(document).ready(function(){
     $('.navbar-collapse').collapse('hide');
   });
 });
+
+// Función para detectar la sección actual mientras se desplaza
+function detectCurrentSection() {
+  const sections = document.querySelectorAll('.fp-section');
+  const currentPosition = window.scrollY;
+
+  sections.forEach((section) => {
+    const top = section.offsetTop;
+    const bottom = top + section.offsetHeight;
+
+    if (currentPosition >= top && currentPosition < bottom) {
+      console.log("Sección actual:", section.id);
+    }
+  });
+}
+
+// Escuchar el evento de scroll
+window.addEventListener('scroll', detectCurrentSection);
+
+// Llamar a la función al cargar la página para detectar la sección inicial
+window.addEventListener('load', detectCurrentSection);
+
+
   
 
   
